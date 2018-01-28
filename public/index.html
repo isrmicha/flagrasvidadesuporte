@@ -8,16 +8,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Todos</title>
+    <title>Todos Flagras do Vida de Suporte</title>
   </head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="angular-lazy-img.min.js"></script>
   
   <body ng-app="myApp" ng-controller="myCtrl">
     <div class="container">
+	<br>
+	<div class="jumbotron">
+  <h1>Todos Flagras do Vida de Suporte</h1> 
+  <p>Aproveite !</p> 
+</div>
       <div class="row justify-content-center">
         <div ng-repeat="item in arr track by $index" class="col-12" >
-              <img lazy-img="{{item}}" class="img-fluid" style="min-width: 250px;  min-height : 250px; " >
+              <img lazy-img="{{item}}" class="img-fluid img-thumbnail" style="min-width: 250px;  min-height : 250px; " >
               <br>
               <hr>
         </div>
